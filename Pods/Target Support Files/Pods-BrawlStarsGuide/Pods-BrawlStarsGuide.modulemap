@@ -1,0 +1,6 @@
+framework module Pods_BrawlStarsGuide {
+  umbrella header "Pods-BrawlStarsGuide-umbrella.h"
+
+  export *
+  module * { export * }
+}

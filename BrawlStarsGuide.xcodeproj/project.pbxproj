@@ -9,21 +9,59 @@
 /* Begin PBXBuildFile section */
 		7F5CD4CC28773B5E0085C90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4CB28773B5E0085C90D /* AppDelegate.swift */; };
 		7F5CD4CE28773B5E0085C90D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4CD28773B5E0085C90D /* SceneDelegate.swift */; };
-		7F5CD4D028773B5E0085C90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4CF28773B5E0085C90D /* ViewController.swift */; };
-		7F5CD4D328773B5E0085C90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5CD4D128773B5E0085C90D /* Main.storyboard */; };
+		7F5CD4D028773B5E0085C90D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4CF28773B5E0085C90D /* HomeViewController.swift */; };
 		7F5CD4D528773B670085C90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5CD4D428773B670085C90D /* Assets.xcassets */; };
 		7F5CD4D828773B670085C90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5CD4D628773B670085C90D /* LaunchScreen.storyboard */; };
+		7F5CD4EA2877474D0085C90D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4E92877474D0085C90D /* UIColor+Hex.swift */; };
+		7F5CD4EC287749D40085C90D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4EB287749D40085C90D /* Color.swift */; };
+		7F5CD4EF2877539B0085C90D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4EE2877539B0085C90D /* MainViewController.swift */; };
+		7F5CD4F1287753D20085C90D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4F0287753D20085C90D /* SideMenuViewController.swift */; };
+		7F5CD4F42877FE980085C90D /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4F32877FE980085C90D /* SideMenuModel.swift */; };
+		7FD9A95428782E4C000D49C0 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A95328782E4C000D49C0 /* SideMenuCell.swift */; };
+		7FD9A956287860F5000D49C0 /* BrawlersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A955287860F5000D49C0 /* BrawlersViewController.swift */; };
+		7FD9A95828786133000D49C0 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A95728786133000D49C0 /* MapsViewController.swift */; };
+		7FD9A95A28787B5C000D49C0 /* GameModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A95928787B5C000D49C0 /* GameModesViewController.swift */; };
+		7FD9A95D28787C0F000D49C0 /* BrawlersResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A95C28787C0F000D49C0 /* BrawlersResponseModel.swift */; };
+		7FD9A96028787E0E000D49C0 /* BrawlersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A95F28787E0E000D49C0 /* BrawlersViewModel.swift */; };
+		7FD9A96328787E91000D49C0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A96228787E91000D49C0 /* NetworkManager.swift */; };
+		7FD9A9652878925E000D49C0 /* BrawlerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A9642878925E000D49C0 /* BrawlerCell.swift */; };
+		7FD9A9692878AF53000D49C0 /* LilitaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FD9A9682878AF53000D49C0 /* LilitaOne-Regular.ttf */; };
+		7FD9A96B2878AFD3000D49C0 /* UIFont+CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A96A2878AFD3000D49C0 /* UIFont+CustomFont.swift */; };
+		7FD9A96E28795702000D49C0 /* GameModesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A96D28795702000D49C0 /* GameModesResponseModel.swift */; };
+		7FD9A970287959B8000D49C0 /* GameModesVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A96F287959B8000D49C0 /* GameModesVIewModel.swift */; };
+		7FD9A972287959E0000D49C0 /* GameModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A971287959E0000D49C0 /* GameModeCell.swift */; };
+		9D5858FA28575664118B1C91 /* Pods_BrawlStarsGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6100623DAAE396A008E293 /* Pods_BrawlStarsGuide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F5CD4C828773B5E0085C90D /* BrawlStarsGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrawlStarsGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5CD4CB28773B5E0085C90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F5CD4CD28773B5E0085C90D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F5CD4CF28773B5E0085C90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7F5CD4D228773B5E0085C90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F5CD4CF28773B5E0085C90D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7F5CD4D428773B670085C90D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F5CD4D728773B670085C90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F5CD4D928773B670085C90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5CD4E92877474D0085C90D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		7F5CD4EB287749D40085C90D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7F5CD4EE2877539B0085C90D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7F5CD4F0287753D20085C90D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		7F5CD4F32877FE980085C90D /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		7FD9A95328782E4C000D49C0 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		7FD9A955287860F5000D49C0 /* BrawlersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlersViewController.swift; sourceTree = "<group>"; };
+		7FD9A95728786133000D49C0 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		7FD9A95928787B5C000D49C0 /* GameModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModesViewController.swift; sourceTree = "<group>"; };
+		7FD9A95C28787C0F000D49C0 /* BrawlersResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlersResponseModel.swift; sourceTree = "<group>"; };
+		7FD9A95F28787E0E000D49C0 /* BrawlersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlersViewModel.swift; sourceTree = "<group>"; };
+		7FD9A96228787E91000D49C0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7FD9A9642878925E000D49C0 /* BrawlerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerCell.swift; sourceTree = "<group>"; };
+		7FD9A9682878AF53000D49C0 /* LilitaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LilitaOne-Regular.ttf"; sourceTree = "<group>"; };
+		7FD9A96A2878AFD3000D49C0 /* UIFont+CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFont.swift"; sourceTree = "<group>"; };
+		7FD9A96D28795702000D49C0 /* GameModesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModesResponseModel.swift; sourceTree = "<group>"; };
+		7FD9A96F287959B8000D49C0 /* GameModesVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModesVIewModel.swift; sourceTree = "<group>"; };
+		7FD9A971287959E0000D49C0 /* GameModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeCell.swift; sourceTree = "<group>"; };
+		8E6100623DAAE396A008E293 /* Pods_BrawlStarsGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrawlStarsGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B8F9196A7FD6F0BDA7D21A /* Pods-BrawlStarsGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrawlStarsGuide.release.xcconfig"; path = "Target Support Files/Pods-BrawlStarsGuide/Pods-BrawlStarsGuide.release.xcconfig"; sourceTree = "<group>"; };
+		F2DF59AB75A342550C131595 /* Pods-BrawlStarsGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrawlStarsGuide.debug.xcconfig"; path = "Target Support Files/Pods-BrawlStarsGuide/Pods-BrawlStarsGuide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5858FA28575664118B1C91 /* Pods_BrawlStarsGuide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		791D2645414193DF4B8AFF2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E6100623DAAE396A008E293 /* Pods_BrawlStarsGuide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F5CD4BF28773B5E0085C90D = {
 			isa = PBXGroup;
 			children = (
 				7F5CD4CA28773B5E0085C90D /* BrawlStarsGuide */,
 				7F5CD4C928773B5E0085C90D /* Products */,
+				F6579E279FFEE7F22143031A /* Pods */,
+				791D2645414193DF4B8AFF2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +105,145 @@
 		7F5CD4CA28773B5E0085C90D /* BrawlStarsGuide */ = {
 			isa = PBXGroup;
 			children = (
-				7F5CD4CB28773B5E0085C90D /* AppDelegate.swift */,
-				7F5CD4CD28773B5E0085C90D /* SceneDelegate.swift */,
-				7F5CD4CF28773B5E0085C90D /* ViewController.swift */,
-				7F5CD4D128773B5E0085C90D /* Main.storyboard */,
-				7F5CD4D428773B670085C90D /* Assets.xcassets */,
-				7F5CD4D628773B670085C90D /* LaunchScreen.storyboard */,
+				7FD9A96128787E7B000D49C0 /* Managers */,
+				7F5CD4E0287740120085C90D /* App */,
+				7F5CD4E62877467D0085C90D /* Helpers */,
+				7F5CD4DF28773C180085C90D /* Core */,
+				7F5CD4E22877428C0085C90D /* Resources */,
 				7F5CD4D928773B670085C90D /* Info.plist */,
 			);
 			path = BrawlStarsGuide;
+			sourceTree = "<group>";
+		};
+		7F5CD4DF28773C180085C90D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7F5CD4CB28773B5E0085C90D /* AppDelegate.swift */,
+				7F5CD4CD28773B5E0085C90D /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7F5CD4E0287740120085C90D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7F5CD4F22877FACE0085C90D /* SideMenu */,
+				7F5CD4E1287740210085C90D /* Main */,
+				7F5CD4E3287743C20085C90D /* Brawlers */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7F5CD4E1287740210085C90D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7F5CD4EE2877539B0085C90D /* MainViewController.swift */,
+				7F5CD4CF28773B5E0085C90D /* HomeViewController.swift */,
+				7FD9A95B28787BEB000D49C0 /* Brawlers */,
+				7FD9A96C287956EB000D49C0 /* GameModes */,
+				7FD9A95728786133000D49C0 /* MapsViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F5CD4E22877428C0085C90D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FD9A9662878ADDF000D49C0 /* Font */,
+				7F5CD4D628773B670085C90D /* LaunchScreen.storyboard */,
+				7F5CD4D428773B670085C90D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F5CD4E3287743C20085C90D /* Brawlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Brawlers;
+			sourceTree = "<group>";
+		};
+		7F5CD4E62877467D0085C90D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7F5CD4E8287746EC0085C90D /* Default */,
+				7F5CD4E72877468A0085C90D /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7F5CD4E72877468A0085C90D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F5CD4E92877474D0085C90D /* UIColor+Hex.swift */,
+				7FD9A96A2878AFD3000D49C0 /* UIFont+CustomFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F5CD4E8287746EC0085C90D /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				7F5CD4EB287749D40085C90D /* Color.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		7F5CD4F22877FACE0085C90D /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7FD9A95328782E4C000D49C0 /* SideMenuCell.swift */,
+				7F5CD4F32877FE980085C90D /* SideMenuModel.swift */,
+				7F5CD4F0287753D20085C90D /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		7FD9A95B28787BEB000D49C0 /* Brawlers */ = {
+			isa = PBXGroup;
+			children = (
+				7FD9A9642878925E000D49C0 /* BrawlerCell.swift */,
+				7FD9A95C28787C0F000D49C0 /* BrawlersResponseModel.swift */,
+				7FD9A955287860F5000D49C0 /* BrawlersViewController.swift */,
+				7FD9A95F28787E0E000D49C0 /* BrawlersViewModel.swift */,
+			);
+			path = Brawlers;
+			sourceTree = "<group>";
+		};
+		7FD9A96128787E7B000D49C0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7FD9A96228787E91000D49C0 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7FD9A9662878ADDF000D49C0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7FD9A9682878AF53000D49C0 /* LilitaOne-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		7FD9A96C287956EB000D49C0 /* GameModes */ = {
+			isa = PBXGroup;
+			children = (
+				7FD9A971287959E0000D49C0 /* GameModeCell.swift */,
+				7FD9A96D28795702000D49C0 /* GameModesResponseModel.swift */,
+				7FD9A95928787B5C000D49C0 /* GameModesViewController.swift */,
+				7FD9A96F287959B8000D49C0 /* GameModesVIewModel.swift */,
+			);
+			path = GameModes;
+			sourceTree = "<group>";
+		};
+		F6579E279FFEE7F22143031A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2DF59AB75A342550C131595 /* Pods-BrawlStarsGuide.debug.xcconfig */,
+				B1B8F9196A7FD6F0BDA7D21A /* Pods-BrawlStarsGuide.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F5CD4DC28773B670085C90D /* Build configuration list for PBXNativeTarget "BrawlStarsGuide" */;
 			buildPhases = (
+				DDFADCBCB7431804ED4C2170 /* [CP] Check Pods Manifest.lock */,
 				7F5CD4C428773B5E0085C90D /* Sources */,
 				7F5CD4C528773B5E0085C90D /* Frameworks */,
 				7F5CD4C628773B5E0085C90D /* Resources */,
+				6D0F13FF47B65549E4E84105 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,35 +307,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5CD4D828773B670085C90D /* LaunchScreen.storyboard in Resources */,
+				7FD9A9692878AF53000D49C0 /* LilitaOne-Regular.ttf in Resources */,
 				7F5CD4D528773B670085C90D /* Assets.xcassets in Resources */,
-				7F5CD4D328773B5E0085C90D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D0F13FF47B65549E4E84105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrawlStarsGuide/Pods-BrawlStarsGuide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrawlStarsGuide/Pods-BrawlStarsGuide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrawlStarsGuide/Pods-BrawlStarsGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDFADCBCB7431804ED4C2170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrawlStarsGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F5CD4C428773B5E0085C90D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5CD4D028773B5E0085C90D /* ViewController.swift in Sources */,
+				7FD9A972287959E0000D49C0 /* GameModeCell.swift in Sources */,
+				7F5CD4D028773B5E0085C90D /* HomeViewController.swift in Sources */,
+				7FD9A96B2878AFD3000D49C0 /* UIFont+CustomFont.swift in Sources */,
+				7F5CD4F42877FE980085C90D /* SideMenuModel.swift in Sources */,
 				7F5CD4CC28773B5E0085C90D /* AppDelegate.swift in Sources */,
+				7F5CD4EA2877474D0085C90D /* UIColor+Hex.swift in Sources */,
+				7F5CD4EF2877539B0085C90D /* MainViewController.swift in Sources */,
+				7FD9A95A28787B5C000D49C0 /* GameModesViewController.swift in Sources */,
+				7FD9A95428782E4C000D49C0 /* SideMenuCell.swift in Sources */,
+				7F5CD4F1287753D20085C90D /* SideMenuViewController.swift in Sources */,
+				7FD9A96028787E0E000D49C0 /* BrawlersViewModel.swift in Sources */,
+				7FD9A970287959B8000D49C0 /* GameModesVIewModel.swift in Sources */,
+				7FD9A95D28787C0F000D49C0 /* BrawlersResponseModel.swift in Sources */,
+				7FD9A96E28795702000D49C0 /* GameModesResponseModel.swift in Sources */,
+				7F5CD4EC287749D40085C90D /* Color.swift in Sources */,
+				7FD9A9652878925E000D49C0 /* BrawlerCell.swift in Sources */,
+				7FD9A956287860F5000D49C0 /* BrawlersViewController.swift in Sources */,
+				7FD9A96328787E91000D49C0 /* NetworkManager.swift in Sources */,
 				7F5CD4CE28773B5E0085C90D /* SceneDelegate.swift in Sources */,
+				7FD9A95828786133000D49C0 /* MapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7F5CD4D128773B5E0085C90D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F5CD4D228773B5E0085C90D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7F5CD4D628773B670085C90D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +514,7 @@
 		};
 		7F5CD4DD28773B670085C90D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DF59AB75A342550C131595 /* Pods-BrawlStarsGuide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +525,7 @@
 				INFOPLIST_FILE = BrawlStarsGuide/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,12 +537,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7F5CD4DE28773B670085C90D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B8F9196A7FD6F0BDA7D21A /* Pods-BrawlStarsGuide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +554,7 @@
 				INFOPLIST_FILE = BrawlStarsGuide/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +566,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
