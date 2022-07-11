@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import SkeletonView
 
 final class BrawlerCell: UICollectionViewCell {
     static var identifier: String { String(describing: self) }
@@ -15,6 +16,7 @@ final class BrawlerCell: UICollectionViewCell {
         let label = UILabel()
         label.font = .lilitaOneFont(ofSize: 13)
         label.textColor = .white
+//        label.isSkeletonable = true
         return label
     }()
     private lazy var rarityWrapView: UIView = {
@@ -31,12 +33,14 @@ final class BrawlerCell: UICollectionViewCell {
         let label = UILabel()
         label.font = .lilitaOneFont(ofSize: 24)
         label.textColor = .white
+        label.isSkeletonable = true
         return label
     }()
     private lazy var classLabel: UILabel = {
         let label = UILabel()
         label.font = .lilitaOneFont(ofSize: 13)
         label.textColor = .white
+        label.isSkeletonable = true
         return label
     }()
     private lazy var brawlerImageView: UIImageView = {
@@ -49,17 +53,16 @@ final class BrawlerCell: UICollectionViewCell {
             .layerMaxXMaxYCorner
         ]
         imageView.clipsToBounds = true
+        imageView.isSkeletonable = true
         return imageView
     }()
     
-    let strokeTextAttributes: [NSAttributedString.Key : Any] = [
-        .foregroundColor: UIColor.red,
-        .strokeColor: UIColor.black,
-        .strokeWidth : 4.0
-    ]
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.isSkeletonable = true
+        contentView.isSkeletonable = true
+        rarityWrapView.isSkeletonable = true
         contentView.addSubview(rarityWrapView)
         rarityWrapView.addSubview(rarityLabel)
         contentView.addSubview(brawlerImageView)
@@ -78,25 +81,43 @@ final class BrawlerCell: UICollectionViewCell {
     }
 }
 
+
 extension BrawlerCell {
     func configureCell(with model: Brawler?) {
         guard let model = model else { return }
 //        rarityLabel.text = model.rarity.name
 //        nameLabel.text = model.name
 //        classLabel.text = model.brawlerClass.name
-        rarityLabel.attributedText = NSAttributedString(
-            string: model.rarity.name,
-            attributes: strokeTextAttributes
-        )
+        
+        let strokeTextAttributes: [NSAttributedString.Key : Any] = [
+            .strokeColor: UIColor.black,
+            .foregroundColor: UIColor.white,
+            .strokeWidth : -4,
+        ]
+        
         nameLabel.attributedText = NSAttributedString(
             string: model.name,
             attributes: strokeTextAttributes
-        )
+        ).uppercased()
+        
+        rarityLabel.attributedText = NSAttributedString(
+            string: model.rarity.name,
+            attributes: strokeTextAttributes
+        ).uppercased()
+        
+        
+        nameLabel.attributedText = NSAttributedString(
+            string: model.name,
+            attributes: strokeTextAttributes
+        ).uppercased()
+        
         classLabel.attributedText = NSAttributedString(
             string: model.brawlerClass.name,
             attributes: strokeTextAttributes
-        )
+        ).uppercased()
+        
         rarityWrapView.backgroundColor = UIColor(hex: model.rarity.color)
+        
         let url = URL(string: model.imageURL2)
         brawlerImageView.kf.setImage(with: url)
     }

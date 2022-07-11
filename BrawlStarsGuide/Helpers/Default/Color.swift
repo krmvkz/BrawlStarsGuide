@@ -12,4 +12,5 @@ enum Color {
     static let white = UIColor(hex: "FFFFFF")
     static let black = UIColor(hex: "000000")
     static let highlightedCell = UIColor(hex: "4B1868")
+    static let skeleton = UIColor(hex: "7858A6")
 }

@@ -8,11 +8,13 @@
 import Foundation
 
 protocol GameModesViewModelDelegate: AnyObject {
+//    func didStartFetchingGameModes()
     func didFinishFetchingGameModes()
+//    func didFinishFetchingGameModesWithError(_ error: Error)
 }
 
 final class GameModesViewModel {
-    var gameModes: [GameMode]?
+    var gameModes: [GameMode] = []
     
     weak var delegate: GameModesViewModelDelegate?
     

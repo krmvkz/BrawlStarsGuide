@@ -59,18 +59,15 @@ final class GameModesViewController: UIViewController {
 
 extension GameModesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let count = viewModel.gameModes?.count {
-            return count
-        } else {
-            return 0
-        }
+        let items = viewModel.gameModes.count
+        return items
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GameModeCell.identifier, for: indexPath) as? GameModeCell else {
             fatalError("Such cell doesn't exist")
         }
-        let gameMode = viewModel.gameModes?[indexPath.row]
+        let gameMode = viewModel.gameModes[indexPath.row]
         cell.configureCell(with: gameMode)
         return cell
     }
@@ -86,7 +83,7 @@ extension GameModesViewController: UITableViewDataSource {
 
 extension GameModesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 210
     }
 }
 

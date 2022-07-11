@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import SkeletonView
 
 final class BrawlersViewController: UIViewController {
     private var viewModel = BrawlersViewModel()
@@ -60,6 +61,16 @@ final class BrawlersViewController: UIViewController {
         viewModel.getBrawlers()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        collectionView.isSkeletonable = true
+        collectionView.showAnimatedGradientSkeleton(
+            usingGradient: .init(baseColor: Color.skeleton),
+            animation: nil,
+            transition: .crossDissolve(0.25)
+        )
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.snp.makeConstraints { make in
@@ -74,20 +85,22 @@ final class BrawlersViewController: UIViewController {
 
 }
 
-extension BrawlersViewController: UICollectionViewDataSource {
+extension BrawlersViewController: SkeletonCollectionViewDataSource {
+    
+    func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        return BrawlerCell.identifier
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let items = viewModel.brawlers?.count {
-            return items
-        } else {
-            return 0
-        }
+        let items = viewModel.brawlers.count
+        return items
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BrawlerCell.identifier, for: indexPath) as? BrawlerCell else {
             fatalError("Such cell doesn't exist")
         }
-        let brawler = viewModel.brawlers?[indexPath.row]
+        let brawler = viewModel.brawlers[indexPath.row]
         cell.configureCell(with: brawler)
         return cell
     }
@@ -105,8 +118,7 @@ extension BrawlersViewController: UICollectionViewDelegateFlowLayout {
 
 extension BrawlersViewController: BrawlersViewModelDelegate {
     func didFinishFetchingBrawlers() {
-        print(viewModel.brawlers)
         collectionView.reloadData()
+        view.hideSkeleton(transition: .crossDissolve(0.25))
     }
-    
 }

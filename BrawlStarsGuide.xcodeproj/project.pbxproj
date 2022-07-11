@@ -17,6 +17,7 @@
 		7F5CD4EF2877539B0085C90D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4EE2877539B0085C90D /* MainViewController.swift */; };
 		7F5CD4F1287753D20085C90D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4F0287753D20085C90D /* SideMenuViewController.swift */; };
 		7F5CD4F42877FE980085C90D /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD4F32877FE980085C90D /* SideMenuModel.swift */; };
+		7F9CC2D9287ADB63004E09EE /* NSAttibutedString+Uppercased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9CC2D8287ADB63004E09EE /* NSAttibutedString+Uppercased.swift */; };
 		7FD9A95428782E4C000D49C0 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A95328782E4C000D49C0 /* SideMenuCell.swift */; };
 		7FD9A956287860F5000D49C0 /* BrawlersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A955287860F5000D49C0 /* BrawlersViewController.swift */; };
 		7FD9A95828786133000D49C0 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9A95728786133000D49C0 /* MapsViewController.swift */; };
@@ -46,6 +47,7 @@
 		7F5CD4EE2877539B0085C90D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7F5CD4F0287753D20085C90D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		7F5CD4F32877FE980085C90D /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		7F9CC2D8287ADB63004E09EE /* NSAttibutedString+Uppercased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttibutedString+Uppercased.swift"; sourceTree = "<group>"; };
 		7FD9A95328782E4C000D49C0 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		7FD9A955287860F5000D49C0 /* BrawlersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlersViewController.swift; sourceTree = "<group>"; };
 		7FD9A95728786133000D49C0 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				7F5CD4E92877474D0085C90D /* UIColor+Hex.swift */,
 				7FD9A96A2878AFD3000D49C0 /* UIFont+CustomFont.swift */,
+				7F9CC2D8287ADB63004E09EE /* NSAttibutedString+Uppercased.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				7F5CD4CC28773B5E0085C90D /* AppDelegate.swift in Sources */,
 				7F5CD4EA2877474D0085C90D /* UIColor+Hex.swift in Sources */,
 				7F5CD4EF2877539B0085C90D /* MainViewController.swift in Sources */,
+				7F9CC2D9287ADB63004E09EE /* NSAttibutedString+Uppercased.swift in Sources */,
 				7FD9A95A28787B5C000D49C0 /* GameModesViewController.swift in Sources */,
 				7FD9A95428782E4C000D49C0 /* SideMenuCell.swift in Sources */,
 				7F5CD4F1287753D20085C90D /* SideMenuViewController.swift in Sources */,

@@ -8,8 +8,6 @@
 import Foundation
 import Alamofire
 
-typealias JSON = [String: String]
-
 private enum Constants {
     static let baseURL = URL(string: "https://api.brawlapi.com/v1")!
     static let brawlersURL = URL(string: "\(baseURL)/brawlers")!
@@ -19,8 +17,6 @@ private enum Constants {
 
 struct NetworkManager {
     static let shared = NetworkManager()
-    
-    private let reachabilityManager = NetworkReachabilityManager()
     
     func fetchBrawlers(completion: @escaping (Result<[Brawler], Error>) -> Void) {
         AF.request(Constants.brawlersURL).responseDecodable(of: BrawlersResponseModel.self) { response in

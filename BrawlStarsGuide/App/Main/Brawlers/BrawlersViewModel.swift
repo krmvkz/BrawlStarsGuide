@@ -10,10 +10,11 @@ import Foundation
 protocol BrawlersViewModelDelegate: AnyObject {
     //    func didStartFetchingBrawlers()
     func didFinishFetchingBrawlers()
+//    func didFinishFetchingWithError()
 }
 
 final class BrawlersViewModel {
-    var brawlers: [Brawler]?
+    var brawlers: [Brawler] = []
     
     weak var delegate: BrawlersViewModelDelegate?
     
